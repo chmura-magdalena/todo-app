@@ -1,0 +1,6 @@
+<input 
+(keydown.enter)="addTodo()"
+[(ngModel)]="inputValue" 
+placeholder="What needs to be done?"/>
+
+<button [disabled]="!inputValue" (click)="addTodo()">Add</button>
